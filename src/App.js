@@ -15,11 +15,15 @@ class App extends Component {
     ]
   }
 
+  changeNameHandler= ()=>{
+    console.log("change name clicked")
+  }
+
   render() {
     return (
       <div className="App">
         <h1>This is a react app</h1>
-        <button>change name</button>
+        <button onClick={this.changeNameHandler}>change name</button>
         <Person name={this.state.persons[0].name}>My Age: {this.state.persons[0].age}</Person>
       </div>
     );
