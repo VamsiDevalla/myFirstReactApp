@@ -39,6 +39,7 @@ class App extends Component {
         <h1>This is a react app</h1>
         <button onClick={this.changeNameHandler}>change name</button>
         <Person name={this.state.persons[0].name}>My Age: {this.state.persons[0].age}</Person>
+        <Person name={this.state.persons[1].name}>My Age: {this.state.persons[1].age}</Person>
       </div>
     );
   }
