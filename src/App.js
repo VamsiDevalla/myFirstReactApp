@@ -16,7 +16,21 @@ class App extends Component {
   }
 
   changeNameHandler= ()=>{
-    console.log("change name clicked")
+    // console.log("change name clicked")
+    // don't do this this.state.persons[0].name = "Devalla Vamsi" 
+    // react has a built in meathod to update state of an class show an follows:
+    this.setState({
+      persons: [
+        {
+          name:"Devalla Vamsi",
+          age:23
+        },
+        {
+          name:"Vamsi Devalla",
+          age:25
+        }
+      ]
+    })
   }
 
   render() {
